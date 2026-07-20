@@ -1,152 +1,108 @@
-## Linux Server Setup Automation
+## Linux Server Setup & Automation
 
-A hands-on Linux Administration project that automates the initial configuration of an Ubuntu server using Bash scripting. This project simulates the common tasks a Linux Administrator performs when provisioning a new server, reducing manual effort and ensuring a consistent setup.
+A hands-on Linux Administration project demonstrating both **manual server provisioning** and **Bash-based automation**.
 
----
+Instead of directly writing an automation script, this project first walks through the manual configuration of an Ubuntu server to understand each administrative task. Once the manual process is validated, the same steps are automated using Bash.
 
-## Project Overview
-
-Provisioning a Linux server involves several repetitive administrative tasks such as updating packages, installing essential tools, configuring secure remote access, and enabling firewall protection.
-
-This project automates those tasks with a single Bash script, making server initialization faster, more reliable, and repeatable.
+This approach reflects a real-world system administration workflow.
 
 ---
 
-## Objectives
+##  Project Objectives
 
-* Perform initial Ubuntu server configuration
-* Automate repetitive administration tasks
-* Install essential Linux utilities
-* Configure OpenSSH for remote access
-* Enable and configure the UFW firewall
-* Verify server readiness after setup
+* Configure an Ubuntu server manually
+* Understand the purpose of each administration task
+* Automate repetitive setup tasks using Bash
+* Compare manual provisioning with automated provisioning
 
 ---
 
-## 🛠️ Technologies Used
+# Project Workflow
 
-* Ubuntu Linux (WSL)
-* Bash Scripting
-* APT Package Manager
-* OpenSSH
-* UFW Firewall
-
----
-
-##  Features
-
-* Updates package repositories
-*  Upgrades installed packages
-*  Removes unused packages
-*  Installs essential Linux administration tools
-*  Installs OpenSSH Server
-*  Configures the UFW firewall
-*  Displays system information after setup
+```
+Fresh Ubuntu Server
+        │
+        ▼
+Manual Configuration
+        │
+        ▼
+Validate Configuration
+        │
+        ▼
+Convert Steps into Bash Script
+        │
+        ▼
+Automated Server Provisioning
+```
 
 ---
 
-##  Project Structure
+# Repository Structure
 
-```text
+```
 linux-server-setup/
-│
-├── README.md
-├── server_setup.sh
-└── screenshots/
+
+README.md
+
+manual-setup/
+    manual_setup.md
+
+automation/
+    server_setup.sh
+
+screenshots/
+    manual/
+    automation/
 ```
 
 ---
 
-## Essential Packages Installed
+# Manual Setup
 
-* Git
-* Curl
-* Wget
-* Vim
-* Tree
-* Htop
-* Net-tools
-* OpenSSH Server
-* UFW
+The manual setup documents each command executed during the server configuration process, including:
 
----
+* Updating packages
+* Installing essential utilities
+* Installing OpenSSH
+* Configuring the firewall
+* Verifying the server configuration
 
-##  How to Run
-
-Clone the repository:
-
-```bash
-git clone <repository-url>
-```
-
-Move into the project directory:
-
-```bash
-cd linux-server-setup
-```
-
-Give execution permission:
-
-```bash
-chmod +x server_setup.sh
-```
-
-Run the automation script:
-
-```bash
-./server_setup.sh
-```
+📄 Documentation: `manual-setup/manual_setup.md`
 
 ---
 
-## Screenshots
+# Bash Automation
 
-Include screenshots for:
+The Bash script automates the complete server setup, reducing repetitive work while ensuring a consistent configuration.
 
-* Ubuntu Version
-* System Update
-* Package Installation
-* SSH Installation
-* Firewall Configuration
-* Script Execution
-* System Information
+Automated tasks include:
+
+* System update
+* Package installation
+* SSH installation
+* Firewall configuration
+* Server verification
+
+📄 Script: `automation/server_setup.sh`
 
 ---
 
-## Skills Demonstrated
+# Skills Demonstrated
 
-* Linux System Administration
+* Linux Administration
 * Bash Scripting
+* Ubuntu Server
 * Package Management
 * SSH Configuration
-* Firewall Configuration
-* Linux Command Line
-* System Verification
+* UFW Firewall
 * Server Provisioning
+* Linux Troubleshooting
 
 ---
 
-## Future Enhancements
+# Future Improvements
 
-* Automate user creation
-* Generate setup logs
-* Add system health checks
-* Deploy the same script on an AWS EC2 Ubuntu instance
-
----
-
-## Key Learning Outcomes
-
-Through this project, I learned how to:
-
-* Configure a Linux server from scratch
-* Automate server provisioning using Bash
-* Manage software packages with APT
-* Configure secure remote access with SSH
-* Protect a server using UFW
-* Validate server configuration using Linux system commands
-
----
-
-
-
+* User Creation Automation
+* Logging
+* Health Check Script
+* AWS EC2 Deployment
