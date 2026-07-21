@@ -3,6 +3,7 @@
 A hands-on Linux Administration project demonstrating how to configure an Ubuntu server manually and then automate the same process using Bash scripting.
 
 The project follows a practical system administration workflow by first understanding each configuration step and then converting those steps into an automation script for faster, consistent server provisioning.
+
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04_LTS-E95420?style=for-the-badge&logo=ubuntu)
 ![Linux](https://img.shields.io/badge/Linux-Administration-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Bash](https://img.shields.io/badge/Bash-Scripting-121011?style=for-the-badge&logo=gnu-bash)
